@@ -1,20 +1,21 @@
-<?php 
-    class a // parent class
+<?php
+	class test
 	{
+		public function __construct()
+		{
+			echo "construct";
+		}
 		public function test()
 		{
-			echo"hello";
-			echo"</br>";
+			echo "hello";
 		}
-	}
-	class b  extends a// child class
-	{
-		public function test1()
+		public function __destruct()
 		{
-			echo"world";
+			echo"distruct";
 		}
 	}
-$obj=new b;
+$obj=new test;
+echo "<br>";
 $obj->test();
-$obj->test1();
+echo"<br>";	
 ?>

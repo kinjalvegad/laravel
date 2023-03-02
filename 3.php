@@ -1,15 +1,11 @@
-<?php
-	class pgdca
+<?php 
+	$a=25;
+	$b=25;
+	function test()
 	{
-		public $x=50;
-		public $y=60;
-		public function add()
-		{    
-			
-			return $this->x+$this ->y;
-		}
+		$GLOBALS['c']=$GLOBALS['a']+$GLOBALS['b'];
 	}
-$obj=new pgdca;
-$z=$obj->add();
-echo $z;	
+test();
+echo$c
 ?>
+//50
